@@ -1,0 +1,10 @@
+
+b
+java:S1854>"ERemove this useless assignment to local variable "usuarioRepository".(ú±Õ±8ºÀãÅ´1
+S
+java:S1481>"6Remove this unused "usuarioRepository" local variable.(ú±Õ±8»ÀãÅ´1
+[
+java:S1128"9Remove this unused import 'dev.valentim.usuario.Usuario'.(¹Éé•úÿÿÿÿ8Ô„ûÅ´1
+u
+java:S1128
+"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ıÿÿÿÿ8€°üÅ´1
