@@ -1,0 +1,20 @@
+# Diretórios gerados pelo Maven
+target/
+*/target/
+
+# Arquivos de configuração do Eclipse (caso você use o plugin do Eclipse)
+.classpath
+.project
+
+# Arquivos de configuração do IntelliJ IDEA (caso você use o IntelliJ IDEA)
+.idea/
+
+# Diretório de armazenamento local do Maven
+.m2/
+
+# Logs e saída de compilação
+*.log
+logs/
+
+# Arquivos temporários
+*~
