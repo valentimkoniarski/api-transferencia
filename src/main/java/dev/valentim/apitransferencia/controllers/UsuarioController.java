@@ -29,14 +29,17 @@ public class UsuarioController {
 
 
     @Autowired
-    public UsuarioController(UsuarioService usuarioService, TokenService tokenService, AuthenticationManager authManager) {
+    public UsuarioController(UsuarioService usuarioService,
+                             TokenService tokenService,
+                             AuthenticationManager authManager) {
         this.usuarioService = usuarioService;
         this.tokenService = tokenService;
         this.authManager = authManager;
     }
 
     @PostMapping("/autenticar")
-    public ResponseEntity<TokenDto> authentication(@RequestBody @Valid final LoginDto loginDto) throws AuthenticationException {
+    public ResponseEntity<TokenDto> authentication(@RequestBody @Valid final LoginDto loginDto)
+            throws AuthenticationException {
         UsernamePasswordAuthenticationToken loginData = loginDto.convert();
         Authentication authentication = authManager.authenticate(loginData);
         String token = tokenService.createToken(authentication);
