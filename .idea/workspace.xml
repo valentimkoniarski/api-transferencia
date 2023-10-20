@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df95d12-2678-46e2-8a10-2b835577aa1d" name="Changes" comment="Criação do serviço de autenticação">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/controllers/TransferenciaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d205836408c27ecbcfab0154ac4bf29a36701de" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d205836408c27ecbcfab0154ac4bf29a36701de" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/280b6ad5037aa6789f73f69bd97a057997ed9780" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/280b6ad5037aa6789f73f69bd97a057997ed9780" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b89adf26f6222c89fb06f87782f8600169a2d20" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b89adf26f6222c89fb06f87782f8600169a2d20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcc25f54034029b3c1945d77caff12d2a65adbd5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcc25f54034029b3c1945d77caff12d2a65adbd5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/valentim/apitransferencia/ApiTransferenciaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/valentim/apitransferencia/ApiTransferenciaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/valentim/apitransferencia/controllers/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/valentim/apitransferencia/controllers/UsuarioController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,13 +77,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "ToolWindowGit.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/oem/development/projeto-transferencia/api-transferencia",
+    "last_opened_file_path": "/home/oem/development/projeto-transferencia/transferencia-models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,7 +118,8 @@
       <workItem from="1697724711152" duration="7020000" />
       <workItem from="1697751752068" duration="154000" />
       <workItem from="1697751915719" duration="15000" />
-      <workItem from="1697751957671" duration="242000" />
+      <workItem from="1697751957671" duration="3863000" />
+      <workItem from="1697756501441" duration="3370000" />
     </task>
     <task id="LOCAL-00001" summary="Criação do serviço de autenticação">
       <option name="closed" value="true" />
@@ -109,13 +129,33 @@
       <option name="project" value="LOCAL" />
       <updated>1697752040924</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Criação do serviço de autenticação">
+      <option name="closed" value="true" />
+      <created>1697752209552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697752209552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value="Criação do serviço de autenticação" />
     <option name="LAST_COMMIT_MESSAGE" value="Criação do serviço de autenticação" />
   </component>
@@ -124,22 +164,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
-          <line>42</line>
+          <line>46</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
-          <line>43</line>
+          <line>47</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
-          <line>45</line>
+          <line>49</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
-          <line>48</line>
+          <line>52</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -163,24 +203,9 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/controllers/UsuarioController.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/controllers/UsuarioController.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
-          <line>46</line>
+          <line>50</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/controllers/UsuarioController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/dev/valentim/usuario/usuario/1.1.5/usuario-1.1.5.jar!/dev/valentim/usuario/UsuarioService.class</url>
@@ -204,8 +229,83 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
-          <line>56</line>
+          <line>67</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/valentim/apitransferencia/ApiTransferenciaApplication.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.1.9/cliente-1.1.9.jar!/dev/valentim/cliente/ClienteService.class</url>
+          <line>28</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.1.9/cliente-1.1.9.jar!/dev/valentim/cliente/ClienteService.class</url>
+          <line>27</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.1.9/cliente-1.1.9.jar!/dev/valentim/cliente/ClienteService.class</url>
+          <line>29</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.1.9/cliente-1.1.9.jar!/dev/valentim/cliente/ClienteService.class</url>
+          <line>30</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/usuario/usuario/1.2.0/usuario-1.2.0.jar!/dev/valentim/usuario/dto/UsuarioConfigDto.class</url>
+          <line>18</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/usuario/usuario/1.2.0/usuario-1.2.0.jar!/dev/valentim/usuario/dto/UsuarioConfigDto.class</url>
+          <line>17</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.2.2/cliente-1.2.2.jar!/dev/valentim/cliente/ClienteDto.class</url>
+          <line>19</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.2.2/cliente-1.2.2.jar!/dev/valentim/cliente/ClienteDto.class</url>
+          <line>18</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.2.2/cliente-1.2.2.jar!/dev/valentim/cliente/ClienteDto.class</url>
+          <line>17</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.2.2/cliente-1.2.2.jar!/dev/valentim/cliente/ClienteDto.class</url>
+          <line>16</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.2.2/cliente-1.2.2.jar!/dev/valentim/cliente/ClienteService.class</url>
+          <line>30</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/dev/valentim/cliente/1.2.2/cliente-1.2.2.jar!/dev/valentim/cliente/ClienteService.class</url>
+          <line>29</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

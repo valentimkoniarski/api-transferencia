@@ -16,7 +16,7 @@
     <properties>
         <java.version>11</java.version>
 
-        <transferencia-models.version>v1.1.1</transferencia-models.version>
+        <transferencia-models.version>1.2.7</transferencia-models.version>
     </properties>
     <dependencies>
         <dependency>
@@ -39,7 +39,13 @@
         <dependency>
             <groupId>dev.valentim.usuario</groupId>
             <artifactId>usuario</artifactId>
-            <version>1.1.5</version>
+            <version>1.2.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.valentim</groupId>
+            <artifactId>cliente</artifactId>
+            <version>1.2.7</version>
         </dependency>
 
         <!-- AUTENTICAÇÃO JWT -->

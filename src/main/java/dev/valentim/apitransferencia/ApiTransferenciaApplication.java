@@ -1,6 +1,10 @@
 package dev.valentim.apitransferencia;
 
 import dev.valentim.apitransferencia.auth.TokenService;
+import dev.valentim.cliente.Cliente;
+import dev.valentim.cliente.ClienteRepository;
+import dev.valentim.cliente.ClienteService;
+import dev.valentim.key.Key;
 import dev.valentim.usuario.Usuario;
 import dev.valentim.usuario.UsuarioRepository;
 import dev.valentim.usuario.UsuarioService;
@@ -21,8 +25,8 @@ import org.springframework.web.context.annotation.RequestScope;
 import javax.servlet.http.HttpSession;
 
 @SpringBootApplication
-@EntityScan(basePackages = {"dev.valentim.usuario"})
-@EnableJpaRepositories(basePackages = {"dev.valentim.usuario"})
+@EntityScan(basePackageClasses = {Usuario.class, Cliente.class, Key.class})
+@EnableJpaRepositories(basePackageClasses = {UsuarioRepository.class, ClienteRepository.class})
 public class ApiTransferenciaApplication {
 
     public static void main(String[] args) {
@@ -47,6 +51,13 @@ public class ApiTransferenciaApplication {
         HttpSession session = appContext.getBean(HttpSession.class);
 
         return new UsuarioService(usuarioRepository, modelMapper, bean, session);
+    }
+
+    @Bean
+    public ClienteService clienteService() {
+        ClienteRepository clienteRepository = appContext.getBean(ClienteRepository.class);
+        ModelMapper modelMapper = appContext.getBean(ModelMapper.class);
+        return new ClienteService(modelMapper, clienteRepository);
     }
 
 

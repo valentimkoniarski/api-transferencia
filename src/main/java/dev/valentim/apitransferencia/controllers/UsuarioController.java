@@ -7,7 +7,6 @@ import dev.valentim.apitransferencia.auth.TokenService;
 import dev.valentim.usuario.UsuarioService;
 import dev.valentim.usuario.dto.UsuarioDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @RestController
@@ -29,14 +27,12 @@ public class UsuarioController {
     private final TokenService tokenService;
     private final AuthenticationManager authManager;
 
-    private final HttpSession session;
 
     @Autowired
-    public UsuarioController(UsuarioService usuarioService, TokenService tokenService, AuthenticationManager authManager, HttpSession session) {
+    public UsuarioController(UsuarioService usuarioService, TokenService tokenService, AuthenticationManager authManager) {
         this.usuarioService = usuarioService;
         this.tokenService = tokenService;
         this.authManager = authManager;
-        this.session = session;
     }
 
     @PostMapping("/autenticar")
@@ -44,10 +40,6 @@ public class UsuarioController {
         UsernamePasswordAuthenticationToken loginData = loginDto.convert();
         Authentication authentication = authManager.authenticate(loginData);
         String token = tokenService.createToken(authentication);
-        session.setAttribute("usuario", authentication);
-
-        UsuarioDto usuarioDto = null;
-        usuarioService.registrarUsuario(usuarioDto);
         return ResponseEntity.ok(new TokenDto(token, "Bearer"));
     }
 
