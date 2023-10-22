@@ -39,13 +39,13 @@
         <dependency>
             <groupId>dev.valentim.usuario</groupId>
             <artifactId>usuario</artifactId>
-            <version>1.2.7</version>
+            <version>1.6.0</version>
         </dependency>
 
         <dependency>
             <groupId>dev.valentim</groupId>
             <artifactId>cliente</artifactId>
-            <version>1.2.7</version>
+            <version>1.6.0</version>
         </dependency>
 
         <!-- AUTENTICAÇÃO JWT -->

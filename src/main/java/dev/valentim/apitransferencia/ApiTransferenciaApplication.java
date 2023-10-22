@@ -8,21 +8,15 @@ import dev.valentim.key.Key;
 import dev.valentim.usuario.Usuario;
 import dev.valentim.usuario.UsuarioRepository;
 import dev.valentim.usuario.UsuarioService;
-import org.apache.catalina.session.StandardSession;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.context.annotation.RequestScope;
-
-import javax.servlet.http.HttpSession;
 
 @SpringBootApplication
 @EntityScan(basePackageClasses = {Usuario.class, Cliente.class, Key.class})
@@ -48,9 +42,8 @@ public class ApiTransferenciaApplication {
         ModelMapper modelMapper = appContext.getBean(ModelMapper.class);
 
         BCryptPasswordEncoder bean = appContext.getBean(BCryptPasswordEncoder.class);
-        HttpSession session = appContext.getBean(HttpSession.class);
 
-        return new UsuarioService(usuarioRepository, modelMapper, bean, session);
+        return new UsuarioService(usuarioRepository, modelMapper, bean);
     }
 
     @Bean
@@ -58,14 +51,6 @@ public class ApiTransferenciaApplication {
         ClienteRepository clienteRepository = appContext.getBean(ClienteRepository.class);
         ModelMapper modelMapper = appContext.getBean(ModelMapper.class);
         return new ClienteService(modelMapper, clienteRepository);
-    }
-
-
-    @Bean
-    @Primary
-    @RequestScope
-    public HttpSession httpSession() {
-        return new StandardSession(null);
     }
 
     @Bean
